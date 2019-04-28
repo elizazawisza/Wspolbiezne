@@ -200,7 +200,7 @@ end Magazine;
 
    procedure taskToString(TaskToPrint : in TaskToDo) is
    begin
-      Put(Integer'Image(TaskToPrint.FirstArgument) & " " & Integer'Image(TaskToPrint.FirstArgument) & " " & (TaskToPrint.Operation) & " " & Integer'Image(TaskToPrint.Result));
+      Put(Integer'Image(TaskToPrint.FirstArgument) & " " & Integer'Image(TaskToPrint.SecondArgument) & " " & (TaskToPrint.Operation) & " " & Integer'Image(TaskToPrint.Result));
       New_Line;
    end taskToString;
 
@@ -379,7 +379,7 @@ task body Employer is
       loop
          ToDoList.remove(takenTask);
          if simulationMode = 'v' then
-            Put_Line("Employer " & Integer'Image(EmployerId) & " got task " &  Integer'Image(takenTask.FirstArgument) & " " & Integer'Image(takenTask.SecondArgument) & " " & (takenTask.Operation) );
+            Put_Line("Employer " & Integer'Image(EmployerId) & " took task from ToDoList " &  Integer'Image(takenTask.FirstArgument) & " " & Integer'Image(takenTask.SecondArgument) & " " & (takenTask.Operation) );
          end if;
           if takenTask.Operation = 'a' then
             MachineId := chooseAdditionMachine;
