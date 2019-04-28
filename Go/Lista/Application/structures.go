@@ -39,6 +39,11 @@ type statistics struct {
 	counter      int
 }
 
+type machineStatistics struct {
+	id           int
+	counter      int
+}
+
 type resolveTask struct {
 	id   int
 	value  Task

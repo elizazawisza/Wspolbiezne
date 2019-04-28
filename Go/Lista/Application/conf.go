@@ -5,7 +5,7 @@ const ToDoListSize = 20
 const MagazineSize = 20
 const Employers = 15
 const Clients = 5
-const DelayCeo = 40 * time.Millisecond
+const DelayCeo = 30 * time.Millisecond
 const DelayEmployer = 100 * time.Millisecond
 const DelayClient = 600 * time.Millisecond
 
