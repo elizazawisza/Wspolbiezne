@@ -1,0 +1,31 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.2
+A -fPIC
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U config%s		config.ads		4684499e NE OO PK IL
+
+D config.ads		20190428144225 4684499e config%s
+D system.ads		20180524051735 085b6ffb system%s
+X 1 config.ads
+1K9*config 21l5 21e11
+3i4*TasksListSize{integer}
+4i4*ItemsSize{integer}
+6i4*TasksQuantity{integer}
+8f4*CeoDelay{float}
+9f4*EmployerDelay{float}
+10f4*ClientDelay{float}
+12i4*EmployersAmount{integer}
+13i4*ClientsAmount{integer}
+15i4*MultiplicationMachinesAmount{integer}
+16i4*AdditionMachinesAmount{integer}
+17f4*MultiplicationDelay{float}
+18f4*AdditionDelay{float}
+19f4*PatientEmployerDelay{float}
+

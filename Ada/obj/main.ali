@@ -1,0 +1,389 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.2
+A -fPIC
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=3
+RV MAX_TASK_ENTRIES=3
+RV MAX_TASKS=1+
+
+U main%b		main.adb		5de381f1 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W config%s		config.ads		config.ali
+Z system%s		system.ads		system.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.concat_7%s	s-conca7.adb		s-conca7.ali
+Z system.concat_8%s	s-conca8.adb		s-conca8.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.img_char%s	s-imgcha.adb		s-imgcha.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-calend.ads		20180524051736 372815c8 ada.calendar%s
+D a-caldel.ads		20180524051734 9f20b83d ada.calendar.delays%s
+D a-charac.ads		20180524051735 2d3ec45b ada.characters%s
+D a-chlat1.ads		20180524051735 66457d31 ada.characters.latin_1%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-finali.ads		20180524051736 bf4f806b ada.finalization%s
+D a-inteio.ads		20180524051736 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180524051735 bb51c45a ada.numerics%s
+D a-nudira.ads		20180524051735 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180524051735 72908cdb ada.numerics.discrete_random%b
+D a-reatim.ads		20180524051736 0240fc73 ada.real_time%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-string.ads		20180524051735 90ac6797 ada.strings%s
+D a-strmap.ads		20180524051735 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20180524051736 8098c91f ada.strings.unbounded%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D a-tiinio.ads		20180524051734 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D config.ads		20190428144225 4684499e config%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-c.ads		20180524051734 5421119b interfaces.c%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D main.adb		20190428144145 944c6661 main%b
+D system.ads		20180524051735 085b6ffb system%s
+D s-atacco.ads		20180524051736 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20180524051736 b45c2d8d system.atomic_counters%s
+D s-conca3.ads		20180524051736 0b705ca5 system.concat_3%s
+D s-conca4.ads		20180524051736 7e642b20 system.concat_4%s
+D s-conca5.ads		20180524051735 875e432e system.concat_5%s
+D s-conca6.ads		20180524051734 d2c72db2 system.concat_6%s
+D s-conca7.ads		20180524051734 fcc75b1f system.concat_7%s
+D s-conca8.ads		20180524051735 e3074dd7 system.concat_8%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-finmas.ads		20180524051736 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180524051736 4ff27390 system.finalization_root%s
+D s-imgcha.ads		20180524051735 9c3458e7 system.img_char%s
+D s-imgint.ads		20180524051734 02dbe0c2 system.img_int%s
+D s-imguns.ads		20180524051735 9ff43cf7 system.img_uns%s
+D s-memory.ads		20180524051735 597d6634 system.memory%s
+D s-multip.ads		20180524051734 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180524130237 089051b2 system.os_constants%s
+D s-osinte.ads		20180524051737 01b3ad47 system.os_interface%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-rannum.ads		20180524051735 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20180524051736 20ba1217 system.random_numbers%b
+D s-ransee.ads		20180524051736 01a57b33 system.random_seed%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180524051735 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stalib.adb		20180524051734 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20180524051735 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180524051734 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180524051734 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20180524051737 801abd01 system.task_info%s
+D s-taspri.ads		20180524051736 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180524051736 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180524051737 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180524051736 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180524051737 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180524051736 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180524051737 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D s-valuns.ads		20180524051736 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 26|1r6 1r26 2r6 2r31 3r6 3r33 4r6 98r38 99r33 281r24 295r24
+. 305r24
+X 8 a-inteio.ads
+18K13*Integer_Text_IO[20|46] 26|2w10 2r35
+X 10 a-numeri.ads
+16K13*Numerics 32e17 26|4r10 98r42 99r37 281r28 295r28 305r28
+X 11 a-nudira.ads
+44k22*Discrete_Random 75e33 26|4w19 98r51 99r46 281r37 295r37 305r37
+50R9 Generator<49|63R9> 26|105r37[98] 106r34[99] 283r13[281] 296r13[295]
+. 306r13[305]
+52V13 Random{integer} 26|114s35[99] 115s36[99] 116s51[98] 287s39[281] 299s15[295]
+. 309s15[305]
+55U14 Reset<49|100p14> 26|112s23[98] 113s18[99] 286s9[281] 298s9[295] 308s9[305]
+X 12 a-nudira.adb
+53V16 Random[49|83]{integer} 50|392b13[26|295]
+X 15 a-string.ads
+16K13*Strings 35e16 26|3r10 3r37
+X 17 a-strunb.ads
+76K21*Unbounded 491e26 26|3w18 3r45
+79R9*Unbounded_String<7|43R9> 474e14 26|23r25 35r43 279r27 284r22 367r21
+94V13*To_Unbounded_String{79R9} 26|39s37 39s69
+100V13*To_String{string} 26|465s27
+170V14*"="{boolean} 26|390s28
+X 19 a-textio.ads
+49K13*Text_IO 471e16 26|1w10 1r30
+166U14*New_Line 26|204s7
+206U14*Get 26|456s10 524s7
+242U14*Put 26|203s7 233s22 269s22 423s13 427s13
+263U14*Put_Line 26|150s16 152s19 154s16 186s16 188s19 190s16 333s13 351s13
+. 382s13 448s10 449s10 450s10 451s10 452s10 453s10 454s10 455s10 462s13 464s16
+. 469s13 471s16 474s13 475s13 477s16 521s7 522s7 523s7
+X 22 config.ads
+1K9*config 21e11 26|5w6 33r35 34r35 36r38 37r44 38r50 126r26 162r26 228r34
+. 264r34 294r50 304r50 313r56 316r62 330r26 345r25 398r39 408r39 434r25 494r49
+. 497r47
+3i4*TasksListSize{integer} 26|33r42 126r33
+4i4*ItemsSize{integer} 26|34r42 162r33
+8f4*CeoDelay{float} 26|345r32
+9f4*EmployerDelay{float} 26|434r32
+10f4*ClientDelay{float} 26|330r33
+12i4*EmployersAmount{integer} 26|36r45 494r56
+13i4*ClientsAmount{integer} 26|497r54
+15i4*MultiplicationMachinesAmount{integer} 26|38r57 294r57 316r69
+16i4*AdditionMachinesAmount{integer} 26|37r51 304r57 313r63
+17f4*MultiplicationDelay{float} 26|228r41
+18f4*AdditionDelay{float} 26|264r41
+19f4*PatientEmployerDelay{float} 26|398r46 408r46
+X 23 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 26 main.adb
+7U11*Main 7b11 531l5 531t9
+9R9 Item 11e14 34r56 48r34 49r35 172r41 178r58 322r16 366r14
+10i7 Value{integer} 188r38 333r112 432m18
+13R9 TaskToDo 18e14 33r60 42r34 43r35 64r34 64r59 69r34 69r59 82r32 95r34
+. 104r17 136r41 142r58 201r44 208r19 224r44 224r69 245r17 261r44 261r69 341r17
+. 360r16 361r17
+14i7 FirstArgument{integer} 88r30 90r36 152r38 203r37 203r86 227r52 229r41
+. 263r46 265r39 351r67 382r104
+15i7 SecondArgument{integer} 88r47 90r53 152r76 227r75 229r64 263r69 265r62
+. 351r112 382r151
+16e7 Operation{character} 86r22 152r115 203r122 229r88 265r86 351r145 382r186
+. 384r24 392r26 414r26 422r49 426r49
+17i7 Result{integer} 203r167 421r31
+20R9 Statistics 25e17 36r67 369r32
+22i10 id{integer} 464r80
+23r10 EmployerType{17|79R9} 465r60
+24i10 counter{integer} 431m44 466r64
+27R9 MachineStatistics 31e17 37r80 38r92 213r48 250r42
+29i10 id{integer} 471r85 477r91
+30i10 counter{integer} 237m64 273m58 472r70 478r76
+33A9 ListofTasks(13R9)<integer> 44r32 128r16 148r36 444r22
+34A9 ListofItems(9R9)<integer> 50r32 164r16 184r36 443r22
+35A9 EmployerType(17|79R9)<integer> 39r20
+36a4 EmployersStatistics(20R9) 376m10 431m10 463r22 464r57 465r37 466r41
+37a4 AdditionMachineStatistics(27R9) 256m10 273m19 470r22 471r56 472r41
+38a4 MultiplicationMachineStatistics(27R9) 219m10 237m19 476r22 477r56 478r41
+39a4 EmployerTypes{35A9} 287r23
+41t9 ToDoList 125b14 159l8 159t16 348r10 380r10 460r13
+42Y13 Insert 42>21 136b20 138l17 138t23 348s19
+42r21 An_Item{13R9} 137r32
+43Y13 Remove 43<21 142b36 144l17 144t23 380s19
+43r21 An_Item{13R9} 143m15 143r15
+44Y13 Show 44<19 148b17 155l14 155t18 460s22
+44a19 A_List{33A9} 149m16 149r16
+47t9 Magazine 161b14 199l5 199t13 331r10 433r10 458r13
+48Y13 Insert 48>21 172b20 174l17 174t23 433s19
+48r21 An_Item{9R9} 173r32
+49Y13 Remove 49<21 178b36 180l17 180t23 331s19
+49r21 An_Item{9R9} 179m15 179r15
+50Y13 Show 50<19 184b17 192l14 192t18 458s22
+50a19 A_List{34A9} 185m16 185r16
+53T14 CEO 340b14 357l8 357t11 492r7
+54T14 Employer 56l8 56e16 359b11 437l8 437t16 494r76
+55Y13 start 55>19 371b15 377l11 377t16 511s23
+55i19 Id{integer} 372r24
+58T14 Client 60l8 60e14 321b14 338l8 338t14 497r72
+59Y13 start 59>19 325b11 327l11 327t16 515s21
+59i19 Id{integer} 326r22
+62T14 AdditionMachine 65l8 65e23 244b12 277l8 277t23 313r90
+63Y13 start 63>19 252b15 257l12 257t17 507s31
+63i19 Id{integer} 253r23
+64Y13 Insert 64>21 64<44 261b23 274l20 274t26 395s54 415s48 417s48
+64r21 An_Item{13R9} 263r38 263r61 265r31 265r54 265r78
+64r44 Out_Item{13R9} 266m19 266r19
+67T14 MultiplicationMachine 70l8 70e29 207b11 241l5 241t26 316r102
+68Y13 start 68>19 215b15 220l12 220t17 503s37
+68i19 Id{integer} 216r23
+69Y13 Insert 69>21 69<44 224b23 238l20 238t26 405s60
+69r21 An_Item{13R9} 227r44 227r67 229r33 229r56 229r80
+69r44 Out_Item{13R9} 230m19 230r19
+72V13 addition{integer} 72b13 72>23 72>26 75l8 75t16 88s19 263s29
+72i23 A{integer} 74r14
+72i26 B{integer} 74r16
+77V13 multiplication{integer} 77b13 77>29 77>32 80l8 80t22 90s19 227s29
+77i29 A{integer} 79r14
+77i32 B{integer} 79r16
+82V13 computeTask{integer} 82b13 82>25 93l8 93t19
+82r25 t{13R9} 86r20 88r28 88r45 90r34 90r51
+83e4 operation{character} 86m7 87r10
+84i4 value{integer} 88m10 90m10 92r14
+95V13 createNewTask{13R9} 95b13 121l8 121t21 346s21
+96I15 Operation_Range{integer} 98r67
+97I15 Random_Range{integer} 99r62
+98K15 RandomOperation[11|44] 105r21 112r7 116r35
+99K15 RandomTask[11|44] 106r23 113r7 114r24 115r25
+101A12 OperationArray(character)<integer> 102r24
+102a7 TaskOperations{101A12} 116r20
+104r7 newTask{13R9} 117m7 119r14
+105r7 seedOptions{11|50R9[98]} 112r30 116r59
+106r7 seedArguments{11|50R9[99]} 113r25 114r43 115r44
+107i7 firstArgument{integer} 114m7 117r19
+108i7 secondArgument{integer} 115m7 117r34
+109e7 operation{character} 116m7 117r50
+123e4 simulationMode{character} 232r22 268r22 332r13 350r13 381r13 422r13
+. 426r13 524m11 525r10 527r13
+126i7 limit{integer} 135r24 139r34 145r36
+127i7 length{integer} 135r15 140m13 140r23 142r15 146m13 146r23 151r29
+128a7 MyList{33A9} 137m16 143r26 149r26 152r28 152r66 152r105
+129i7 Head{integer} 143r33 145m13 145r22
+130i7 Tail{integer} 137r23 139m13 139r22
+136r28 An_Item{13R9}
+142r44 An_Item{13R9}
+148a23 A_List{33A9}
+151i19 I{integer} 152r35 152r73 152r112
+162i7 limit{integer} 171r24 175r34 181r36
+163i7 length{integer} 171r15 176m13 176r23 178r15 182m13 182r23
+164a7 MyList{34A9} 173m16 179r26 185r26 187r25 188r28
+165i7 Head{integer} 179r33 181m13 181r22
+166i7 Tail{integer} 173r23 175m13 175r22
+172r28 An_Item{9R9}
+178r44 An_Item{9R9}
+184a23 A_List{34A9}
+187i20 I{integer} 188r35
+201U14 taskToString 201b14 201>27 205l8 205t20 234s22 270s22 424s13 428s13
+201r27 TaskToPrint{13R9} 203r25 203r74 203r110 203r155
+208r7 multiTask{13R9} 229m19 230r31 234r35
+209i7 MachineId{integer} 216m10 218r53 219r42 233r68 237r51
+210b7 Busy{boolean} 223r18 225m19 231m19
+211i7 Result{integer} 227m19 229r99
+212i7 Counter{integer} 217m10 218r64 236m19 236r30 237r75
+213r7 CurrentMultiplicationMachineStatisctic{27R9} 218m10 219r58
+215i21 Id{integer}
+224r31 An_Item{13R9}
+224r54 Out_Item{13R9}
+245r7 addTask{13R9} 265m19 266r31 270r35
+246i7 MachineId{integer} 253m10 255r47 256r36 269r62 273r45
+247b7 Busy{boolean} 260r18 262m19 267m19
+248i7 Result{integer} 263m19 265r97
+249i7 Counter{integer} 254m10 255r58 272m19 272r30 273r69
+250r7 CurrentAdditionMachineStatisctic{27R9} 255m10 256r52
+252i21 Id{integer}
+261r31 An_Item{13R9}
+261r54 Out_Item{13R9}
+279V13 whoAmI{17|79R9} 279b13 290l8 290t14 373s28
+280I15 Random_Range{integer} 281r54
+281K15 R[11|44] 283r11 286r7 287r37
+283r7 G{11|50R9[281]} 286r16 287r47
+284r7 EmployerType{17|79R9} 287m7 289r13
+293V13 chooseMultiplicationMachine{integer} 293b13 300l8 300t35 387s26 409s37
+294I15 Random_Range{integer} 295r54
+295K15 R[11|44] 296r11 298r7 299r13
+296r7 G{11|50R9[295]} 298r16 299r23
+303V13 chooseAdditionMachine{integer} 303b13 310l8 310t29 385s26 399s37
+304I15 Random_Range{integer} 305r54
+305K15 R[11|44] 306r11 308r7 309r13
+306r7 G{11|50R9[305]} 308r16 309r23
+313A9 AdditionMachines(62T14)<integer> 314r27
+314a4 AdditionMachinesList{313A9} 395r22 415r16 417r16 506r13 507r7
+316A9 MultiplicationMachines(67T14)<integer> 317r33
+317a4 MultiplicationMachinesList{316A9} 405r22 502r13 503r7
+322r4 takenItem{9R9} 331m26 333r102
+323i4 clientId{integer} 326m10 333r48
+325i17 Id{integer}
+328l7 Endless_Loop 337l16 337e28
+341r7 newTask{13R9} 346m10 348r26 351r59 351r104 351r137
+343l7 Endless_Loop 354l16 354e28
+360r4 takenTask{13R9} 380m26 382r94 382r141 382r176 384r14 392r16 395r61
+. 405r67 414r16 415r55 417r55
+361r4 resultTask{13R9} 395m72 405m78 415m66 417m66 421r20 422r38 424r26 426r38
+. 428r26
+362i4 result{integer} 421m10 432r27
+363i4 EmployerId{integer} 372m10 375r40 376r30 382r50 423r45 427r45 431r30
+364i4 MachineId{integer} 385m13 387m13 395r43 399m24 405r49 409m24 415r37
+. 417r37 423r112 427r105
+365b4 Done{boolean} 391m13 393r25 396m22 403r26 406m22
+366r4 newItem{9R9} 432m10 433r26
+367r4 TypeofEmployer{17|79R9} 373m10 375r52 390r13
+368i4 Counter{integer} 374m10 375r68 430m10 430r21 431r55
+369r4 CurrentEmployerStatisctic{20R9} 375m10 375r10 376r47
+371i21 Id{integer}
+378l7 Endless_Loop 435l16 435e28
+440e4 optionCalmMode{character} 456m14 457r13 459r16 461r16 468r16
+442U14 calmMode 442b14 488l8 488t16 528s10
+443a7 magazineState{34A9} 458m27
+444a7 toDoListState{33A9} 460m27
+446l7 Endless_Loop 484l16 484e28
+463i17 i{integer} 464r77 465r57 466r61
+470i17 i{integer} 471r82 472r67
+476i17 i{integer} 477r88 478r73
+492t4 c{53T14}
+494A9 Employers(54T14)<integer> 495r19
+495a4 EmployerList{494A9} 510r13 511r7
+497A9 Clients(58T14)<integer> 498r17
+498a4 ClientList{497A9} 514r13 515r7
+502i8 i{integer} 503r34 503r43
+506i8 i{integer} 507r28 507r37
+510i8 i{integer} 511r20 511r29
+514i8 i{integer} 515r18 515r27
+519l4 Endless_Loop 526r15 530l13 530e25
+X 27 system.ads
+67M9*Address
+X 44 s-memory.ads
+53V13*Alloc{27|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{27|67M9} 105i<c,__gnat_realloc>22
+X 49 s-rannum.ads
+75V13*Random{23|74M9} 50|221i21
+76V13*Random{23|77M9} 50|221i21
+X 55 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 57 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

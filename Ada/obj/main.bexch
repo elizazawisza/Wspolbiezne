@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/Users/eliza.zawisza/Desktop/PW/list1.gpr
+20190331164634
+[BOUND OBJECT FILES]
+/Users/eliza.zawisza/Desktop/PW/obj/config.o
+/Users/eliza.zawisza/Desktop/PW/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/Users/eliza.zawisza/Desktop/PW/obj/
+-L/Users/eliza.zawisza/Desktop/PW/obj/
+-L/users/eliza.zawisza/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/
+-static
+/users/eliza.zawisza/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/libgnarl.a
+/users/eliza.zawisza/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/libgnat.a
