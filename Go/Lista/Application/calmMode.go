@@ -11,6 +11,7 @@ func calmMode(showMagazine chan *Show , showToDoList chan *Show){
 		fmt.Println("2 - information about the current task to do")
 		fmt.Println("3 - information about the employees")
 		fmt.Println("4 - information about the machines")
+		fmt.Println("5 - information about the servicemen")
 
 
 		fmt.Scanln(&option)
@@ -52,16 +53,26 @@ func calmMode(showMagazine chan *Show , showToDoList chan *Show){
 			fmt.Println()
 			fmt.Println("Below you can see the current statistics of addition Machines ")
 			for _, machine := range additionMachineStatistics {
-				fmt.Println("Machine Id: ", machine.id, " amount of resolved Tasks :", machine.counter)
+				fmt.Println("Machine Id: ", machine.id, " amount of resolved Tasks :", machine.computedTaskCounter,
+					" amount of breakdowns: ", machine.breakdownCounter)
 			}
 			fmt.Println()
 			fmt.Println("Below you can see the current statistics of multiplication Machines ")
 			for _, machine := range multiplicationMachineStatistics {
-				fmt.Println("Machine Id: ", machine.id,  "  amount of resolved Tasks :", machine.counter)
+				fmt.Println("Machine Id: ", machine.id,  "  amount of resolved Tasks :", machine.computedTaskCounter,
+					" amount of breakdowns: ", machine.breakdownCounter)
 			}
 			fmt.Println()
 
 
+		} else if option == "5"{
+			fmt.Println()
+			fmt.Println("Below you can see the current statistics of servicemen ")
+			for _, serviceman := range servicemanStatistic {
+				fmt.Println("Serviceman ", serviceman.id, " amount of fixed MultiplicationMachines: ", serviceman.multiFixed,
+					" amount of fixed AdditionMachines: ", serviceman.addFixed)
+			}
+			fmt.Println()
 		}else{
 			fmt.Println("Wrong data, please try again")
 			continue

@@ -25,6 +25,12 @@ func tasksToString(tasks []Task) []string{
 	return strs
 }
 
+func taskToString(task Task) []string{
+	var strs []string
+		strs = append(strs, strconv.Itoa(task.firstArgument) + " " + strconv.Itoa(task.secondArgument) + " " + task.operation)
+	return strs
+}
+
 
 func Tasks (limit int, addToTaskList chan *AddToDoList, takeFromTaskList chan *TakeFromToDoList, showToDoList chan *Show){
 

@@ -8,10 +8,10 @@ import (
 var types = [2]string{"patient", "impatient"}
 var employersStatistics [Employers]statistics
 
-func chooseAdditionMachine(machines [AdditionMachinesAmount]chan *resolveTask) chan *resolveTask {
+func chooseAdditionMachine(machines [AdditionMachinesAmount]chan *machine) chan *machine {
 	return machines[rand.Intn(len(machines))]
 }
-func chooseMultiplicationMachine(machines [MultiplicationMachinesAmount]chan *resolveTask) chan *resolveTask {
+func chooseMultiplicationMachine(machines [MultiplicationMachinesAmount]chan *machine) chan *machine {
 	return machines[rand.Intn(len(machines))]
 }
 
@@ -19,11 +19,16 @@ func whoAmI() string {
 	return types[rand.Intn(len(types))]
 }
 
+func getRandIdx(amount int) int{
+	return rand.Intn(amount)
+}
+
 func Employer(Id int, addItem chan *AddToMagazine, takeTask chan *TakeFromToDoList, verbose bool,
-		multiplicationMachines [MultiplicationMachinesAmount]chan *resolveTask, additionMachines [AdditionMachinesAmount]chan *resolveTask){
-		var employerType = whoAmI()
-		var counter = 0
-		employersStatistics[Id] = statistics{Id, employerType, counter}
+	multiplicationMachines [MultiplicationMachinesAmount]chan *machine, additionMachines [AdditionMachinesAmount]chan *machine){
+	var employerType = whoAmI()
+	var counter = 0
+	var idx = 0
+	employersStatistics[Id] = statistics{Id, employerType, counter}
 
 	for{
 		taken := &TakeFromToDoList{
@@ -39,17 +44,19 @@ func Employer(Id int, addItem chan *AddToMagazine, takeTask chan *TakeFromToDoLi
 
 
 		var resolvedTask Task
-		calc := &resolveTask{
+		calc := &machine{
 			id:       Id,
 			value:    task,
 			response: make(chan Task)}
 
-		var machine chan *resolveTask
+		var machine chan *machine
 
 		if task.operation == "addition" {
-			machine = chooseAdditionMachine(additionMachines)
+			idx = getRandIdx(AdditionMachinesAmount)
+			machine = additionMachines[idx]
 		} else if task.operation == "multiplication" {
-			machine = chooseMultiplicationMachine(multiplicationMachines)
+			idx = getRandIdx(MultiplicationMachinesAmount)
+			machine = multiplicationMachines[idx]
 		}
 
 		if employerType == "impatient" {
@@ -71,9 +78,6 @@ func Employer(Id int, addItem chan *AddToMagazine, takeTask chan *TakeFromToDoLi
 			machine <- calc
 			resolvedTask = <-calc.response
 		}
-
-
-
 		myResult := resolvedTask.result
 		counter++
 		employersStatistics[Id].counter = counter
@@ -89,6 +93,4 @@ func Employer(Id int, addItem chan *AddToMagazine, takeTask chan *TakeFromToDoLi
 		}
 		time.Sleep(DelayEmployer)
 	}
-
-
 }
